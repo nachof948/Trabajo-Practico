@@ -156,6 +156,7 @@ label{
     gap: 3rem;
     font-weight: 500;
     font-size: 1rem;
+    transition: color 0.3s;
 }
 .iconos-usuario a{
     color: var(--color-negro);
@@ -165,7 +166,6 @@ label{
     font-size: 1.2rem;
     position: relative;
 }
-
 .favoritos,.compras{
     display: flex;
     align-items: center;
@@ -192,6 +192,15 @@ label{
     top: 87px;
     right: 168px;
     z-index: 1;
+}
+.favoritos:hover a{
+    color: var(--color-naranja);
+}
+.compras:hover a{
+    color: var(--color-naranja);
+}
+.usuario:hover a{
+    color: var(--color-naranja);
 }
 /* CLASES NAV */
 .enlaces{
@@ -223,7 +232,7 @@ label{
     border: 1px solid gray;
     border-radius: 6px;
     padding: 0.4rem;
-    cursor: pointer;
+    cursor: pointer;;
 }
 .orden a{
     color: #11110F;
@@ -238,7 +247,6 @@ label{
 }
 .orden:hover img {
     animation: mov infinite 1s;
-
 }
 @keyframes mov {
     0%{
