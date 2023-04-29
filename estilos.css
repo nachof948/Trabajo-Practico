@@ -223,6 +223,7 @@ label{
     border: 1px solid gray;
     border-radius: 6px;
     padding: 0.4rem;
+    cursor: pointer;
 }
 .orden a{
     color: #11110F;
@@ -237,6 +238,7 @@ label{
 }
 .orden:hover img {
     animation: mov infinite 1s;
+
 }
 @keyframes mov {
     0%{
