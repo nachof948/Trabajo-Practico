@@ -25,19 +25,20 @@ a{
 header{
     display: flex;
     flex-direction: column;
-    padding-inline: 1.7rem;
+
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 0.6rem;
+    padding: 0rem 3.1rem 0rem 1.1rem ;
     margin-top: -5px;
 }
 main{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
 }
 section{
     display: flex;
@@ -63,7 +64,7 @@ label{
     justify-content: space-between;
     background-color: var(--color-gris);
     color: #FFFFFF;
-    padding: 0.7rem 0.6rem 0.7rem 3rem;
+    padding: 0.7rem 0.9rem 0.7rem 3rem;
 }
 /* Contactos */
 .contactos{
@@ -129,7 +130,8 @@ label{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 0.8rem;
+/*     padding: 0rem 1rem 0rem 0.8rem; */
+    padding: 0rem 3.1rem 0rem 1.7rem ;
 }
 .encabezado img{
     width: 100px;
@@ -168,18 +170,24 @@ label{
 }
 .iconos-usuario a{
     color: var(--color-negro);
-    font-weight: 500;
+    font-weight: 700;
     transition: color 250ms;
+    font-size: 0.8rem;
 }
 .iconos-usuario i{
     font-size: 1.2rem;
     position: relative;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+.compras i,
+.usuario i{
+    font-size: 1.4rem;
 }
 .favoritos,.compras{
     display: flex;
     align-items: center;
 }
-
 .favoritos::before{
     content: "0";
     position: absolute;
@@ -189,7 +197,8 @@ label{
     color: #FFFFFF;
     padding: 0.5px 3.5px;
     top: 87px;
-    right: 318px;
+    right: 302px;
+    z-index: 1;
 }
 .compras::before{
     content: "0";
@@ -200,13 +209,15 @@ label{
     color: #FFFFFF;
     padding: 0.5px 3.5px;
     top: 87px;
-    right: 168px;
+    right: 167px;
     z-index: 1;
 }
-.favoritos:hover a{
+.favoritos:hover a,
+.favoritos:hover i{
     color: var(--color-naranja);
 }
-.compras:hover a{
+.compras:hover a,
+.compras:hover i{
     color: var(--color-naranja);
 }
 .usuario:hover a{
@@ -215,11 +226,11 @@ label{
 /* CLASES NAV */
 .enlaces{
     display: flex;
-    gap: 3.1rem;
+    gap: 1.5rem;
     padding-inline: 2rem;
 }
 .enlaces a{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #11110F;
     font-weight: 600;
     position: relative;
@@ -287,7 +298,7 @@ form input{
     gap: 1.5rem;
     border: 1px solid gray;
     border-radius: 10px;
-    padding: 1.4rem 1.8rem;
+    padding: 1.4rem 2.3rem;
 }
 .empresas{
     display: flex;
@@ -298,7 +309,7 @@ form input{
 .empresas svg{
     border: 1px solid rgb(142, 141, 141);
     border-radius: 6px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.1rem;
 }
 .divisor{
     display: flex;
