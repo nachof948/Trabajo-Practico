@@ -401,6 +401,10 @@ form input{
     font-weight: 500;
     display: flex;
     justify-content: center;
+    transition: color 0.3s;
+}
+.formulario .registrate:hover{
+    color: var(--color-naranja);
 }
 /* FIN IMAGEN Y FORMULARIO */
 /* ANIMACIONES */
