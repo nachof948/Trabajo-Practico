@@ -130,8 +130,7 @@ label{
     display: flex;
     justify-content: space-between;
     align-items: center;
-/*     padding: 0rem 1rem 0rem 0.8rem; */
-    padding: 0rem 3.1rem 0rem 1.7rem ;
+    padding: 0rem 3.1rem 0rem 2.1rem ;
 }
 .encabezado img{
     width: 100px;
