@@ -103,6 +103,13 @@ label{
     gap: 0.6rem;
     cursor: pointer;
 }
+.delivery a{
+    color: var(--color-blanco);
+}
+.delivery:hover i {  
+    animation: movimiento 1s infinite;
+}
+
 .divisor-preheader hr{
     height: 1.3rem;
     margin-inline: 1rem;
@@ -161,6 +168,7 @@ label{
 .iconos-usuario a{
     color: var(--color-negro);
     font-weight: 500;
+    transition: color 250ms;
 }
 .iconos-usuario i{
     font-size: 1.2rem;
@@ -170,6 +178,7 @@ label{
     display: flex;
     align-items: center;
 }
+
 .favoritos::before{
     content: "0";
     position: absolute;
@@ -248,29 +257,7 @@ label{
 .orden:hover img {
     animation: mov infinite 1s;
 }
-@keyframes mov {
-    0%{
-        transform: translateY(-1px) rotate(115deg);
-    }
-    25%{
-        transform: translateY(-3px) rotate(115deg);
-    }
-    40%{
-        transform: translateY(-1px) rotate(115deg);
-    }
-    50%{
-        transform: translateY(1px) rotate(115deg);
-    }
-    65%{
-        transform: translateY(2px) rotate(115deg);
-    }
-    75%{
-        transform: translateY(3px) rotate(115deg);
-    }
-    100%{
-        transform: translateY(1px) rotate(115deg);
-    }
-} 
+
 /* FIN CLASES NAV */
 /* FIN CLASES HEADER */
 
@@ -394,8 +381,52 @@ form input{
     justify-content: center;
 }
 /* FIN IMAGEN Y FORMULARIO */
+/* ANIMACIONES */
+@keyframes movimiento {
+    0%{
+        transform: translateY(-1px);
+    }
+    25%{
+        transform: translateY(-2px);
+    }
+    40%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    65%{
+        transform: translateY(1px);
+    }
+    75%{
+        transform: translateY(2px);
+    }
+    100%{
+        transform: translateY(1px);
+    }
+} 
 
-
-
-
-/* Configuracion del Input del Password */
+@keyframes mov {
+    0%{
+        transform: translateY(-1px) rotate(115deg);
+    }
+    25%{
+        transform: translateY(-3px) rotate(115deg);
+    }
+    40%{
+        transform: translateY(-1px) rotate(115deg);
+    }
+    50%{
+        transform: translateY(1px) rotate(115deg);
+    }
+    65%{
+        transform: translateY(2px) rotate(115deg);
+    }
+    75%{
+        transform: translateY(3px) rotate(115deg);
+    }
+    100%{
+        transform: translateY(1px) rotate(115deg);
+    }
+} 
+/* FIN ANIMACIONES */
