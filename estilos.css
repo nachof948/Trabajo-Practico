@@ -165,18 +165,18 @@ label{
     gap: 3rem;
     font-weight: 500;
     font-size: 1rem;
-    transition: color 0.3s;
 }
 .iconos-usuario a{
     color: var(--color-negro);
     font-weight: 700;
     transition: color 250ms;
     font-size: 0.8rem;
+    margin-left: 0.3rem;
 }
 .iconos-usuario i{
     font-size: 1.2rem;
     position: relative;
-    transition: color 0.3s;
+    transition: color 250ms;
     cursor: pointer;
 }
 .compras i,
@@ -195,8 +195,8 @@ label{
     font-size: 0.5rem;
     color: #FFFFFF;
     padding: 0.5px 3.5px;
-    top: 87px;
-    right: 302px;
+    top: 86px;
+    right: 318px;
     z-index: 1;
 }
 .compras::before{
@@ -208,7 +208,7 @@ label{
     color: #FFFFFF;
     padding: 0.5px 3.5px;
     top: 87px;
-    right: 167px;
+    right: 175px;
     z-index: 1;
 }
 .favoritos:hover a,
@@ -297,7 +297,7 @@ form input{
     gap: 1.5rem;
     border: 1px solid gray;
     border-radius: 10px;
-    padding: 1.4rem 2.3rem;
+    padding: 1.5rem 2.3rem;
 }
 .empresas{
     display: flex;
@@ -317,13 +317,13 @@ form input{
     color: gray;
 }
 .divisor hr{
-    width: 4.8rem;
+    width: 4.9rem;
     margin-inline: 0.5rem;
 }
 .botones{
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.9rem;
 }
 .btn-email{
     background-color: var(--color-naranja);
@@ -357,7 +357,8 @@ form input{
 .form-password i{
     position: absolute;
     left: 250px;
-    top: 30px;
+    top: 25px;
+    font-size: 1.1rem;
     cursor: pointer;
 }
 .formulario a{
