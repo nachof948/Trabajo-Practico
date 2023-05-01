@@ -55,6 +55,11 @@ h1{
     font-size: 1.3rem;
     font-weight: 500;
 }
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 label{
     font-weight: 500;
 }
@@ -283,11 +288,6 @@ section img{
     height: 543px;
     border-radius: 10px;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
 form input{
     width: 16rem;
     border-radius: 4px;
@@ -321,7 +321,7 @@ form input{
     color: gray;
 }
 .divisor hr{
-    width: 4.9rem;
+    width: 5.6rem;
     margin-inline: 0.5rem;
 }
 .botones{
