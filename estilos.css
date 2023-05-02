@@ -293,7 +293,7 @@ form input{
     width: 16.5rem;
     border-radius: 4px;
     border: 1px solid gray;
-    padding: 0.33rem 0.6rem;
+    padding: 0.4rem 0.6rem;
 }
 .formulario{
     display: flex;
@@ -377,7 +377,7 @@ form input{
 .form-password i{
     position: absolute;
     left: 252px;
-    top: 28px;
+    top: 30px;
     font-size: 1.1rem;
     cursor: pointer;
 }
