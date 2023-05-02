@@ -63,6 +63,7 @@ form{
 label{
     font-weight: 500;
 }
+/* CLASES HEADER */
 /* CLASES PRE-HEADER */
 .pre-header{
     display: flex;
@@ -100,11 +101,13 @@ label{
     text-decoration: underline;
 }
 /* Envios */
-
 .envios{
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+.envios a{
+    color: var(--color-blanco);
 }
 .delivery{
     display: flex;
@@ -116,7 +119,7 @@ label{
     color: var(--color-blanco);
 }
 .delivery:hover i {  
-    animation: movimiento 1s infinite;
+    animation: camion 1s infinite;
 }
 .divisor-preheader hr{
     height: 1.3rem;
@@ -129,9 +132,7 @@ label{
     cursor: pointer;
 }
 /* FIN CLASES PRE-HEADER */
-
-/* CLASES HEADER */
-
+/* CLASES ENCABEZADO */
 .encabezado{
     display: flex;
     justify-content: space-between;
@@ -173,6 +174,7 @@ label{
     gap: 3rem;
     font-weight: 500;
     font-size: 1rem;
+    cursor: pointer;
 }
 .iconos-usuario a{
     color: var(--color-negro);
@@ -185,7 +187,6 @@ label{
     font-size: 1.2rem;
     position: relative;
     transition: color 250ms;
-    cursor: pointer;
 }
 .compras i,
 .usuario i{
@@ -230,6 +231,7 @@ label{
 .usuario:hover a{
     color: var(--color-naranja);
 }
+/* FIN CLASES ENCABEZADO */
 /* CLASES NAV */
 .enlaces{
     display: flex;
@@ -272,13 +274,12 @@ label{
     width: 20px;
     height: 20px;
     position: relative;
-    top: 4px;
-    right: 4px;
+    top: 2px;
+    right: 3px;
 }
 .orden:hover img {
-    animation: mov infinite 1s;
+    animation: flecha infinite 1s;
 }
-
 /* FIN CLASES NAV */
 /* FIN CLASES HEADER */
 
@@ -301,7 +302,7 @@ form input{
     gap: 1.5rem;
     border: 1px solid gray;
     border-radius: 10px;
-    padding: 1.5rem 2.3rem;
+    padding: 1.03rem 2.3rem;
 }
 .empresas{
     display: flex;
@@ -309,16 +310,27 @@ form input{
     gap: 3.1rem;
     cursor: pointer;
 }
+.empresas button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 .empresas svg{
     border: 1px solid rgb(142, 141, 141);
     border-radius: 6px;
     padding: 0.5rem 1.1rem;
+    transition: color 250ms;
+}
+.empresas svg:hover{
+    border: 1px solid var(--color-naranja);
+
 }
 .divisor{
     display: flex;
     align-items: center;
     justify-content: center;
     color: gray;
+    font-weight: 600;
 }
 .divisor hr{
     width: 5.6rem;
@@ -415,12 +427,12 @@ form input{
     height: 1px;
     top: 17px;
 }
-.formulario .registrate:hover{
+.registrate:hover{
     color: var(--color-naranja);
 }
 /* FIN IMAGEN Y FORMULARIO */
 /* ANIMACIONES */
-@keyframes movimiento {
+@keyframes camion {
     0%{
         transform: translateY(-1px);
     }
@@ -444,7 +456,7 @@ form input{
     }
 } 
 
-@keyframes mov {
+@keyframes flecha {
     0%{
         transform: translateY(-1px) rotate(115deg);
     }
