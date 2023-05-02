@@ -367,13 +367,17 @@ form input{
     display: flex;
     flex-direction: column;
 }
+.form-email label,
+.form-password label{
+    margin-bottom: 0.35rem;
+}
 .form-password{
     position: relative;
 }
 .form-password i{
     position: absolute;
     left: 252px;
-    top: 25px;
+    top: 31px;
     font-size: 1.1rem;
     cursor: pointer;
 }
