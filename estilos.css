@@ -290,7 +290,7 @@ section img{
     border-radius: 10px;
 }
 form input{
-    width: 16rem;
+    width: 16.5rem;
     border-radius: 4px;
     border: 1px solid gray;
     padding: 0.5rem 0.6rem;
@@ -302,12 +302,12 @@ form input{
     gap: 1.5rem;
     border: 1px solid gray;
     border-radius: 10px;
-    padding: 1.03rem 2.3rem;
+    padding: 1.03rem 1.8rem;
 }
 .empresas{
     display: flex;
     align-items: center;
-    gap: 3.1rem;
+    gap: 2.7rem;
     cursor: pointer;
 }
 .empresas button{
@@ -333,7 +333,7 @@ form input{
     font-weight: 600;
 }
 .divisor hr{
-    width: 5.6rem;
+    width: 5rem;
     margin-inline: 0.5rem;
 }
 .botones{
@@ -372,7 +372,7 @@ form input{
 }
 .form-password i{
     position: absolute;
-    left: 250px;
+    left: 252px;
     top: 25px;
     font-size: 1.1rem;
     cursor: pointer;
